@@ -12,31 +12,22 @@ client.on('ready', function() {
 
 
 
-client.on('voiceStateUpdate', (o, n) => {
-        let newUserChannel = n.voiceChannel
-    let oldUserChannel = o.voiceChannel
-
-    var channel = client.channels.get("462302884155883520");
-         let cha = n.guild.channels.get("462302960052076564");
-        
-          let mute1 = o.serverMute;
-  let mute2 = n.serverMute;
-  
-
-  let deafen1 = o.serverDeaf;
-  let deafen2 = n.serverDeaf;
-
-    if(mute1 === false && mute2 === true) return;
-    if(mute1 === true && mute2 === false) return;
-    if(deafen1 === false && deafen2 === true) return;
-    if(deafen1 === true && deafen2 === false) return;
-    
-
-    channel.send(`Join Room ${n.displayName}`)
-
-});
 
 
+client.on('message', message => {
+  if (message.author.bot) return;
+  if (!message.content.startsWith(prefix)) return;
+
+  let command = message.content.split(" ")[0];
+  command = command.slice(prefix.length);
+
+  let args = message.content.split(" ").slice(1);
+
+  if (command == "~say") {
+   message.channel.sendMessage(args.join("  "))
+   message.delete()
+  }
+ });
 
 
 client.on("message", message => {
