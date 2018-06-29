@@ -1,14 +1,28 @@
 {
-  "name": "tutorial-bot",
+  "name": "gboty",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "node index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
   },
-  "author": "Zendovo",
-  "license": "ISC",
+  "engines": {
+    "node": "8.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shadow0o0/gboty.git"
+  },
+  "author": "GarZ",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/shadow0o0/gboty/issues"
+  },
+  "homepage": "https://github.com/shadow0o0/gboty#readme",
   "dependencies": {
+    "dateformat": "^3.0.3",
     "discord.js": "^11.3.2"
+    
   }
 }
