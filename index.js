@@ -16,8 +16,8 @@ client.on('voiceStateUpdate', (o, n) => {
         let newUserChannel = n.voiceChannel
     let oldUserChannel = o.voiceChannel
 
-    var channel = client.channels.get("462302884155883520");
-        var voice = client.channels.get("462302960052076564");
+    var channel = o.guild.channels.get("462302884155883520");
+        var voice = n.guild.channels.get("462302960052076564");
         
           let mute1 = o.serverMute;
   let mute2 = n.serverMute;
