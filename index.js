@@ -141,7 +141,7 @@ if (message.member.voiceChannel == null) return message.channel.send(`**الرج
    });
 
 client.on("message", async function(message)  {
-let voiceMembers = message.guild.channels.get('462302884155883520');
+let voiceMembers = message.guild.channels.get('462302960052076564');
 if(message.content.startsWith(prefix + "voice")) {
     voiceMembers.sendMessage(`**الاعضاء المتواجدون حاليا : ${message.guild.members.filter(member => member.voiceChannel).size}**`);
     voiceMembers.sendMessage('```\n'+message.guild.members.filter(member => member.voiceChannel).map(m => m.user.tag).join('\n') + '```');
