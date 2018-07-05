@@ -3,7 +3,6 @@ const client = new Discord.Client();
 
 
 
-
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
 });
@@ -32,7 +31,7 @@ client.on('ready', () => {
 
 
 
-console.log('Mido King Bot Ready');
+console.log('Mtera9a Bot Ready');
 client.on('ready', () => {
   console.log(`im redey`);
 });
@@ -95,6 +94,47 @@ const x5bz4 = [
    message.react("??")
   }
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -173,47 +213,36 @@ client.on("message", message => {
   const embed = new Discord.RichEmbed()
       .setColor("RANDOM")
       .setFooter('© Premium Bot:heart: جميع الحقوق محفوظة 2017 لــبوت')
-  .setFooter('======================================================')
-    .setFooter('اوامر صاحب البوت')
-      .setFooter('prefix ', `+`)
-      .setFooter('playing ', `تم تغيير الحالة`)
-      .setFooter('streem ', `لتم تغيير الحالة الى ستريمنج`)
-      .setFooter('setavatar ', `لتم تغير صورة البوت`)
-      .setFooter('setname ', `لتم تغير الأسم`)
-  .setFooter('======================================================')
-    .setFooter('اوامر الادمنيه')
-      .setFooter('prefix ', `-`)
-      .addField('bc', `لخاصية البرودكستات`)
-  .setFooter('======================================================')
-    .setFooter('اوامر الاعضاء')
-      .setFooter('prefix ', `-`)
-      .addField('invite', `لاضافة البوت الى سيرفرك`)
-      .addField('roles', `لمعرفة الرتب الي في السيرفر`)
-      .addField('avatar', `يجبلك الافتار حقك يعني صورة حسابك`)
-      .addField('2avatar', `الافتار عن طريق المنشن`)
-      .addField('server', `يجبلك معلومات السيرفر`)
-      .addField('id', `يجبلك الملف الشخصي حقك`)
-      .addField('clear', `البوت يمسح  100 رسايل`)
-      .addField('say', `البوت يكرر الكلام الي انت تقوله`)
-      .addField('ping', `يقلك كم بنق البوت`)
-      .addField('support', `سيرفر الدعم`)
-  .setFooter('======================================================')
-    .setFooter('اوامر تحت الصيانه(يمكنك تجربتها) وشكرا')
-      .setFooter('prefix ', `-`)
-      .addField('play', `لتسمع الاغنيه`)
-      .addField('mute ', `تعطي لشخص ميوت  لايتكلم`)
-      .addField('غرد', `للتغريد`)
-      .addField('embed', `البوت يكرر الكلام الي قلته ب امبد`)
-      .addField('cat', `يجبلك صورة بسه`)
-      .addField('member', `لترى كم عضو اون لاين وكم اوف لاين`)
-      .addField('اعضاء', `يوريك كم عضو في سيرفرك`)
-      .addField('cv', `يصنع لك روم صوتي`)
-      .addField('ct', `يصنع لك روم كتابي`)
-      .addField('kick', `لطرد شخص من سيرفر`)
-      .addField('ban', `لحظر شخص`)
-      .addField('سيرفرات ', `لرؤية   اعدادات سيرفر`)
-      .addField('كم ', `يوريك  كم في سيرفرات فيهم بوتك`)
-      .addField('bot ', `يوريك كم  داكرة بوتك`)
+      .setFooter('اوامر الادمنيه')
+	  .addField('-bc', `لخاصية البرودكستات`)
+      .setFooter('======================================================')
+      .setFooter('اوامر الاعضاء')
+      .addField('-invite', `لاضافة البوت الى سيرفرك`)
+	  .addField('-roles', `لمعرفة الرتب الي في السيرفر`)
+      .addField('-avatar', `يجبلك الافتار حقك يعني صورة حسابك`)
+      .addField('-2avatar', `الافتار عن طريق المنشن`)
+	  .addField('-server', `يجبلك معلومات السيرفر`)
+	  .addField('-id', `يجبلك الملف الشخصي حقك`)
+	  .addField('-clear', `البوت يمسح  100 رسايل`)
+	  .addField('-say', `البوت يكرر الكلام الي انت تقوله`)
+	  .addField('-ping', `يقلك كم بنق البوت`)
+      .addField('-support', `سيرفر الدعم`)
+      .setFooter('======================================================')
+      .setFooter('اوامر تحت الصيانه(يمكنك تجربتها) وشكرا')
+      .addField('-play', `لتسمع الاغنيه`)
+	  .addField('-mute ', `تعطي لشخص ميوت  لايتكلم`)
+      .addField('-غرد', `للتغريد`)
+      .addField('-embed', `البوت يكرر الكلام الي قلته ب امبد`)
+	  .addField('-cat', `يجبلك صورة بسه`)
+	  .addField('-member', `لترى كم عضو اون لاين وكم اوف لاين`)
+	  .addField('-اعضاء', `يوريك كم عضو في سيرفرك`)
+	  .addField('-cv', `يصنع لك روم صوتي`)
+	  .addField('-ct', `يصنع لك روم كتابي`)
+	  .addField('-kick', `لطرد شخص من سيرفر`)
+	  .addField('-ban', `لحظر شخص`)
+	  .addField('-سيرفرات ', `لرؤية   اعدادات سيرفر`)
+	  .addField('-كم ', `يوريك  كم في سيرفرات فيهم بوتك`)
+	  .addField('-bot ', `يوريك كم  داكرة بوتك`)
   message.author.send({embed});
 
  }
@@ -223,6 +252,7 @@ client.on("message", message => {
 
 
 const Love = [  "**احبك / عدد قطرات المـــطر والشجر وامواج البحر والنجوم الي تتزاحم مبهورة في جمال القمر**.",  "**ساعزفك وساجعلك لحنا تغني عليه جميع قصائد العشــق**.",  "**احبك موت... لاتسألني ما الدليل ارأيت رصاصه تسأل القتيل؟**.",  "**ربما يبيع الانسان شيئا قد شراه لاكن لا يبيع قلبا قد هواه**.",  "**و ما عجبي موت المحبين في الهوى ........... و لكن بقاء العاشقين عجيب**.",   "**حلفت / لاحشـــد جيوش الحب واحتلك مسكين ربي بلاك بعـــاشق ارهـــابي**.",   "**العيــن تعشق صورتك ... والقلب يجري فيه دمك وكل مااسمع صوتك ...شفايفي تقول احبك**.",   "**ياحظ المكان فيك..ياحظ من هم حواليك ...ياحظ الناس تشوفك ... وانا مشتاق اليك**.",   "**لو كنت دمعة داخل عيوني بغمض عليك وصدقي ما راح افتح...ولو كان الثمن عيوني**.",   "**سهل اموت عشانك لكن الصعب اعيش بدونك سهل احبك لكن صعب انساك**.",   "**أخشى ان انظر لعيناك وأنا فى شوق ولهيب لرؤياك**.",   "**أتمنى ان اكون دمعة تولد بعينيك واعيش على خديك واموت عند شفتيك**.",   "**أحياناً أرى الحياة لا تساوى إبتسامة لكن دائماً إبتسامتك هى كيانى**.",   "**من السهل أن ينسى الانسان نفسه .. لكن من الصعب ان ينسى نفساً سكنت نفسه !**.",   "**نفسى أكون نجمة سماك .. همسة شفاك .. شمعة مساك .. بس تبقى معايا وانا معاك**.",   "**أهنئ قلبى بحبك وصبر عينى فى بعدك وأقول إنك نور عينى يجعل روحى فدى قلبك**.", ]
+
 
  client.on('message', message => {
    if (message.content.startsWith("-حب")) {
@@ -246,7 +276,7 @@ client.on("message", message => {
   const embed = new Discord.RichEmbed()
       .setColor("RANDOM")
       .setFooter('© Premium Bot:heart: جميع الحقوق محفوظة 2017 لــبوت')
-      .addField(' شكرا لاستخدمك اللحية ', `هنا رابط بوتك`)
+      .addField(' شكرا لاستخدمك مطرقة بوت ', `هنا رابط بوتك`)
   message.author.send({embed});
 
  }
@@ -265,8 +295,10 @@ message.channel.sendEmbed(cat);
 });
 
 
+
+
 client.on('ready', () => {
-     client.user.setActivity("انا اشاهدك حبيبي by اللحية",{type: 'WATCHING'});
+     client.user.setActivity("انا اشاهدك حبيبي by مطرقة",{type: 'WATCHING'});
 
 });
 
@@ -414,6 +446,15 @@ client.on('message', function(msg) {
       msg.channel.send({embed:embed});
     }
 	});
+
+
+
+
+
+ 
+
+
+
 client.on("message", message => {
  if (message.content === "-support") {
   const embed = new Discord.RichEmbed()
@@ -424,6 +465,12 @@ client.on("message", message => {
 
  }
 });
+
+
+
+
+
+
 const secreT = [
   "**الحياة بكل ما فيها تقف دائمًا على حد الوسطية بين اتزان المعنى وضده من حب وكره وحق وباطل وعدل وظلم**.",
   "**كى تعيش عليك ان تتقن فن التجاهل باحتراف**.",
@@ -437,6 +484,8 @@ const secreT = [
   "**ينكحك شخص لالالا هدي ضفتها انا هههههههه**.", 
   "**نحن نكتب ما لا نستطيع ان نقول وما نريد ان يكون**.", 
 ]
+
+
  client.on('message', message => {
    if (message.content.startsWith("-خواطر")) {
                 if(!message.channel.guild) return message.reply('** This command only for servers**');
@@ -450,6 +499,13 @@ const secreT = [
   console.log('[id] Send By: ' + message.author.username)
     }
 });
+
+
+
+
+
+
+
 
 const Za7f = [
     "**صورة وجهك او رجلك او خشمك او يدك**.",
@@ -513,12 +569,15 @@ const Za7f = [
   var embed = new Discord.RichEmbed()
   .setColor('RANDOM')
    .setThumbnail(message.author.avatarURL) 
- .addField('اللحية' ,
+ .addField('مطرقة بوت' ,
   `${Za7f[Math.floor(Math.random() * Za7f.length)]}`)
   message.channel.sendEmbed(embed);
   console.log('[38ab] Send By: ' + message.author.username)
     }
 });
+
+
+
 client.on("message", message => {
     const prefix = "-"
               
@@ -537,6 +596,9 @@ client.on("message", message => {
    message.channel.send({embed});
       }
   });
+
+  
+  
 client.on('message', message => {
     if (message.content.startsWith("^avatar")) {
         var mentionned = message.mentions.users.first();
@@ -553,6 +615,10 @@ client.on('message', message => {
       message.channel.sendEmbed(embed);
     }
 });
+
+
+
+
 var prefix = "-";
 var rebel = ["https://f.top4top.net/p_682it2tg6.png","https://e.top4top.net/p_682a1cus5.png","https://d.top4top.net/p_682pycol4.png","https://c.top4top.net/p_682vqehy3.png","https://b.top4top.net/p_682mlf9d2.png","https://a.top4top.net/p_6827dule1.png","https://b.top4top.net/p_682g1meb10.png","https://a.top4top.net/p_682jgp4v9.png","https://f.top4top.net/p_682d4joq8.png","https://e.top4top.net/p_6828o0e47.png","https://d.top4top.net/p_6824x7sy6.png","https://c.top4top.net/p_682gzo2l5.png","https://b.top4top.net/p_68295qg04.png","https://a.top4top.net/p_682zrz6h3.png","https://f.top4top.net/p_6828vkzc2.png","https://e.top4top.net/p_682i8tb11.png"]
     client.on('message', message => {
@@ -563,6 +629,14 @@ var rebel = ["https://f.top4top.net/p_682it2tg6.png","https://e.top4top.net/p_68
 message.channel.sendEmbed(cat);
     }
 });
+
+
+
+
+
+
+
+
 const TOKEN = "";
 
 function commandIs(str, msg){
@@ -582,7 +656,8 @@ function hasRole(mem, role) {
 
   }
   
- 
+  
+  
 client.on('message', message => {
     if (message.content.startsWith("-stats")) {
     message.channel.send({
@@ -610,6 +685,8 @@ function timeCon(time) {
 
 
 
+
+
 client.on('message', message => {
      if (message.content === "-كم") {
 		 if(!message.channel.guild) return;
@@ -619,6 +696,11 @@ client.on('message', message => {
   message.channel.sendEmbed(embed);
     }
 });
+
+
+
+
+
 
 
 
@@ -761,12 +843,12 @@ const Client = new Discord.Client();
 
 client.on('ready', () => {
    console.log(`----------------`);
-      console.log(`MAHDI BOT STARTED`);
+      console.log(`NADIR BOT STARTED`);
         console.log(`---------------`);
       console.log(`ON ${client.guilds.size} Servers `);
     console.log(`---------------`);
   console.log(`Logged in as ${client.user.tag}!`);
-  client.user.setGame(`Mido King -help اللحية`,"http://twitch.tv/ninja")
+  client.user.setGame(`in 60 server -help And 130 user`,"http://twitch.tv/ninja")
    client.user.setStatus("dnd")
 });
 
@@ -973,44 +1055,8 @@ return message.reply("**:white_check_mark: .. تم فك الميوت عن الش
 });
 
 
-client.on('message', message => {
-    var prefix = "+";
-
-      if (!message.content.startsWith(prefix)) return;
-      var args = message.content.split(' ').slice(1);
-      var argresult = args.join(' ');
-      if (message.author.id == 462026589669031937) return;
 
 
-    if (message.content.startsWith(prefix + 'playing')) {
-    if (message.author.id !== '378293431593598986') return message.reply('** هذا الأمر فقط لصاحب البوت و شكراًً **')
-    client.user.setGame(argresult);
-        message.channel.sendMessage(`**${argresult}** : تم تغيير الحالة`)
-    } else
-
-
-    if (message.content.startsWith(prefix + 'streem')) {
-    if (message.author.id !== '378293431593598986') return message.reply('** هذا الأمر فقط لصاحب البوت و شكراًً **')
-    client.user.setGame(argresult, "http://twitch.tv/HP");
-        message.channel.sendMessage(`**${argresult}** :تم تغيير الحالة الى ستريمنج`)
-    } else
-
-    if (message.content.startsWith(prefix + 'setname')) {
-    if (message.author.id !== '378293431593598986') return message.reply('** هذا الأمر فقط لصاحب البوت و شكراًً **')
-      client.user.setUsername(argresult).then
-          message.channel.sendMessage(`**${argresult}** : تم تغير الأسم`)
-      return message.reply("**لا تستطيع تغير الأسم الا بعد ساعتين**");
-    } else
-
-    if (message.content.startsWith(prefix + 'setavatar')) {
-    if (message.author.id !== '378293431593598986') return message.reply('** هذا الأمر فقط لصاحب البوت و شكراًً **')
-    client.user.setAvatar(argresult);
-        message.channel.sendMessage(`**${argresult}** : تم تغير صورة البوت`);
-    }
-
-
-
-     });
 
 
 
@@ -1027,7 +1073,7 @@ client.on('guildMemberAdd', member => {
     .setDescription(`اهلا بك في السيرفر`)
     .addField(' :bust_in_silhouette:  انت رقم',`**[ ${member.guild.memberCount} ]**`,true)
     .setColor('GREEN')
-    .setFooter('The King Bot', 'https://cdn.pg.sa/OD53Wjr9p0.gif')
+    .setFooter('The King Bot', 'https://cdn.discordapp.com/icons/390551815072251904/418fa2788d8115808951c9881ba8f190.jpg')
 
 var channel =member.guild.channels.find('name', 'wlc')
 if (!channel) return;
@@ -1860,18 +1906,39 @@ client.on('guildMemberAdd', member => {
       channel.sendEmbed(embed);
     });
     
+    client.on('guildMemberRemove', member => {
+        var embed = new Discord.RichEmbed()
+        .setAuthor(member.user.username, member.user.avatarURL)
+        .setThumbnail(member.user.avatarURL)
+        .setTitle(`الله معاك :raised_hand::skin-tone-1: :pensive:`)
+        .setDescription(`مع السلامه تشرفنا بك :raised_hand::skin-tone-1: :pensive: `)
+        .addField(':bust_in_silhouette:   تبقي',`**[ ${member.guild.memberCount} ]**`,true)
+        .setColor('RED')
+        .setFooter(`==== نــتــمــنــآ لــكــم آســتــمـــتــآع ====`, 'https://cdn.discordapp.com/attachments/397818254439219217/399292026782351381/shy.png')
+    
+    var channel =member.guild.channels.find('name', 'welcome')
+    if (!channel) return;
+    channel.send({embed : embed});
+    }) 
+
+
+
 
 
 
 
 client.on('message', message => {
-  if (true) {
-if (message.content === '-invite') {
-      message.author.send('https://discordapp.com/api/oauth2/authorize?client_id=458751694516256769&permissions=8&scope=bot').catch(e => console.log(e.stack));
+    if (message.content.startsWith("-invites")) {
+    message.guild.fetchInvites()
+    .then(invites => message.channel.send(`انت جبت   ${invites.find(invite => invite.inviter.id === message.author.id).uses} عضو لهاذا السيرفر`))
 
+
+
+     
     }
-   } 
-  });
+});
+
+
 
 
 
@@ -2229,7 +2296,6 @@ client.on('message', message => {
 message.channel.sendEmbed(avatar)
     }
 });
-
 
 
 
