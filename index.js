@@ -31,7 +31,7 @@ client.on('ready', () => {
 
 
 
-console.log('Mtera9a Bot Ready');
+console.log('MAHDI Bot Ready');
 client.on('ready', () => {
   console.log(`im redey`);
 });
@@ -213,10 +213,19 @@ client.on("message", message => {
   const embed = new Discord.RichEmbed()
       .setColor("RANDOM")
       .setFooter('© Premium Bot:heart: جميع الحقوق محفوظة 2017 لــبوت')
+      .setFooter('اوامر صاحب البوت')
+          .setFooter('prefix ', `+`)
+          .setFooter('playing ', `تم تغيير الحالة`)
+          .setFooter('streem ', `لتم تغيير الحالة الى ستريمنج`)
+          .setFooter('setavatar ', `لتم تغير صورة البوت`)
+          .setFooter('setname ', `لتم تغير الأسم`)
+      .setFooter('======================================================')
       .setFooter('اوامر الادمنيه')
+          .setFooter('prefix ', `-`)
 	  .addField('-bc', `لخاصية البرودكستات`)
       .setFooter('======================================================')
       .setFooter('اوامر الاعضاء')
+          .setFooter('prefix ', `-`)
       .addField('-invite', `لاضافة البوت الى سيرفرك`)
 	  .addField('-roles', `لمعرفة الرتب الي في السيرفر`)
       .addField('-avatar', `يجبلك الافتار حقك يعني صورة حسابك`)
@@ -229,6 +238,7 @@ client.on("message", message => {
       .addField('-support', `سيرفر الدعم`)
       .setFooter('======================================================')
       .setFooter('اوامر تحت الصيانه(يمكنك تجربتها) وشكرا')
+          .setFooter('prefix ', `-`)
       .addField('-play', `لتسمع الاغنيه`)
 	  .addField('-mute ', `تعطي لشخص ميوت  لايتكلم`)
       .addField('-غرد', `للتغريد`)
