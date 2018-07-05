@@ -207,8 +207,11 @@ client.on('message', msg => {
   }
 });
 client.on("message", message => {
- if (message.content === "-help") {
-  const embed = new Discord.RichEmbed()
+    if (message.content === ("-help")) {
+     const embed = new Discord.RichEmbed() 
+         .setColor("#580e6b")
+         .setThumbnail(message.author.avatarURL)
+         .setDescription(`
       .setColor("RANDOM")
       .setFooter('© Premium Bot:heart: جميع الحقوق محفوظة 2017 لــبوت')
       .setFooter('اوامر صاحب البوت')
@@ -250,7 +253,7 @@ client.on("message", message => {
 	  .addField('-سيرفرات ', `لرؤية   اعدادات سيرفر`)
 	  .addField('-كم ', `يوريك  كم في سيرفرات فيهم بوتك`)
 	  .addField('-bot ', `يوريك كم  داكرة بوتك`)
-  message.author.send({embed});
+   message.author.sendEmbed(embed)
 
  }
 });
