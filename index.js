@@ -3,6 +3,7 @@ const client = new Discord.Client();
 
 
 
+
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
 });
@@ -31,7 +32,7 @@ client.on('ready', () => {
 
 
 
-console.log('Mido King Ready');
+console.log('Mtera9a Bot Ready');
 client.on('ready', () => {
   console.log(`im redey`);
 });
@@ -94,47 +95,6 @@ const x5bz4 = [
    message.react("??")
   }
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -253,7 +213,6 @@ client.on("message", message => {
 
 const Love = [  "**احبك / عدد قطرات المـــطر والشجر وامواج البحر والنجوم الي تتزاحم مبهورة في جمال القمر**.",  "**ساعزفك وساجعلك لحنا تغني عليه جميع قصائد العشــق**.",  "**احبك موت... لاتسألني ما الدليل ارأيت رصاصه تسأل القتيل؟**.",  "**ربما يبيع الانسان شيئا قد شراه لاكن لا يبيع قلبا قد هواه**.",  "**و ما عجبي موت المحبين في الهوى ........... و لكن بقاء العاشقين عجيب**.",   "**حلفت / لاحشـــد جيوش الحب واحتلك مسكين ربي بلاك بعـــاشق ارهـــابي**.",   "**العيــن تعشق صورتك ... والقلب يجري فيه دمك وكل مااسمع صوتك ...شفايفي تقول احبك**.",   "**ياحظ المكان فيك..ياحظ من هم حواليك ...ياحظ الناس تشوفك ... وانا مشتاق اليك**.",   "**لو كنت دمعة داخل عيوني بغمض عليك وصدقي ما راح افتح...ولو كان الثمن عيوني**.",   "**سهل اموت عشانك لكن الصعب اعيش بدونك سهل احبك لكن صعب انساك**.",   "**أخشى ان انظر لعيناك وأنا فى شوق ولهيب لرؤياك**.",   "**أتمنى ان اكون دمعة تولد بعينيك واعيش على خديك واموت عند شفتيك**.",   "**أحياناً أرى الحياة لا تساوى إبتسامة لكن دائماً إبتسامتك هى كيانى**.",   "**من السهل أن ينسى الانسان نفسه .. لكن من الصعب ان ينسى نفساً سكنت نفسه !**.",   "**نفسى أكون نجمة سماك .. همسة شفاك .. شمعة مساك .. بس تبقى معايا وانا معاك**.",   "**أهنئ قلبى بحبك وصبر عينى فى بعدك وأقول إنك نور عينى يجعل روحى فدى قلبك**.", ]
 
-
  client.on('message', message => {
    if (message.content.startsWith("-حب")) {
                 if(!message.channel.guild) return message.reply('** This command only for servers**');
@@ -295,10 +254,8 @@ message.channel.sendEmbed(cat);
 });
 
 
-
-
 client.on('ready', () => {
-     client.user.setActivity("انا اشاهدك حبيبي by مطرقة",{type: 'WATCHING'});
+     client.user.setActivity("انا اشاهدك حبيبي by اللحية",{type: 'WATCHING'});
 
 });
 
@@ -446,15 +403,6 @@ client.on('message', function(msg) {
       msg.channel.send({embed:embed});
     }
 	});
-
-
-
-
-
- 
-
-
-
 client.on("message", message => {
  if (message.content === "-support") {
   const embed = new Discord.RichEmbed()
@@ -465,12 +413,6 @@ client.on("message", message => {
 
  }
 });
-
-
-
-
-
-
 const secreT = [
   "**الحياة بكل ما فيها تقف دائمًا على حد الوسطية بين اتزان المعنى وضده من حب وكره وحق وباطل وعدل وظلم**.",
   "**كى تعيش عليك ان تتقن فن التجاهل باحتراف**.",
@@ -484,8 +426,6 @@ const secreT = [
   "**ينكحك شخص لالالا هدي ضفتها انا هههههههه**.", 
   "**نحن نكتب ما لا نستطيع ان نقول وما نريد ان يكون**.", 
 ]
-
-
  client.on('message', message => {
    if (message.content.startsWith("-خواطر")) {
                 if(!message.channel.guild) return message.reply('** This command only for servers**');
@@ -499,13 +439,6 @@ const secreT = [
   console.log('[id] Send By: ' + message.author.username)
     }
 });
-
-
-
-
-
-
-
 
 const Za7f = [
     "**صورة وجهك او رجلك او خشمك او يدك**.",
@@ -575,9 +508,6 @@ const Za7f = [
   console.log('[38ab] Send By: ' + message.author.username)
     }
 });
-
-
-
 client.on("message", message => {
     const prefix = "-"
               
@@ -596,9 +526,6 @@ client.on("message", message => {
    message.channel.send({embed});
       }
   });
-
-  
-  
 client.on('message', message => {
     if (message.content.startsWith("^avatar")) {
         var mentionned = message.mentions.users.first();
@@ -615,10 +542,6 @@ client.on('message', message => {
       message.channel.sendEmbed(embed);
     }
 });
-
-
-
-
 var prefix = "-";
 var rebel = ["https://f.top4top.net/p_682it2tg6.png","https://e.top4top.net/p_682a1cus5.png","https://d.top4top.net/p_682pycol4.png","https://c.top4top.net/p_682vqehy3.png","https://b.top4top.net/p_682mlf9d2.png","https://a.top4top.net/p_6827dule1.png","https://b.top4top.net/p_682g1meb10.png","https://a.top4top.net/p_682jgp4v9.png","https://f.top4top.net/p_682d4joq8.png","https://e.top4top.net/p_6828o0e47.png","https://d.top4top.net/p_6824x7sy6.png","https://c.top4top.net/p_682gzo2l5.png","https://b.top4top.net/p_68295qg04.png","https://a.top4top.net/p_682zrz6h3.png","https://f.top4top.net/p_6828vkzc2.png","https://e.top4top.net/p_682i8tb11.png"]
     client.on('message', message => {
@@ -629,14 +552,6 @@ var rebel = ["https://f.top4top.net/p_682it2tg6.png","https://e.top4top.net/p_68
 message.channel.sendEmbed(cat);
     }
 });
-
-
-
-
-
-
-
-
 const TOKEN = "";
 
 function commandIs(str, msg){
@@ -656,8 +571,7 @@ function hasRole(mem, role) {
 
   }
   
-  
-  
+ 
 client.on('message', message => {
     if (message.content.startsWith("-stats")) {
     message.channel.send({
@@ -685,8 +599,6 @@ function timeCon(time) {
 
 
 
-
-
 client.on('message', message => {
      if (message.content === "-كم") {
 		 if(!message.channel.guild) return;
@@ -696,11 +608,6 @@ client.on('message', message => {
   message.channel.sendEmbed(embed);
     }
 });
-
-
-
-
-
 
 
 
@@ -848,7 +755,7 @@ client.on('ready', () => {
       console.log(`ON ${client.guilds.size} Servers `);
     console.log(`---------------`);
   console.log(`Logged in as ${client.user.tag}!`);
-  client.user.setGame(`in 60 server -help And 130 user`,"http://twitch.tv/ninja")
+  client.user.setGame(`Mido King -help اللحية`,"http://twitch.tv/ninja")
    client.user.setStatus("dnd")
 });
 
