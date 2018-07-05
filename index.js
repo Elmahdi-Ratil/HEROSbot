@@ -206,26 +206,23 @@ client.on('message', msg => {
     msg.reply('تم اشتغال بوت استمتع  :)');
   }
 });
-
-
 client.on("message", message => {
  if (message.content === "-help") {
   const embed = new Discord.RichEmbed()
       .setColor("RANDOM")
       .setFooter('© Premium Bot:heart: جميع الحقوق محفوظة 2017 لــبوت')
       .setFooter('اوامر صاحب البوت')
-          .setFooter('prefix ', `+`)
-          .setFooter('playing ', `تم تغيير الحالة`)
-          .setFooter('streem ', `لتم تغيير الحالة الى ستريمنج`)
-          .setFooter('setavatar ', `لتم تغير صورة البوت`)
-          .setFooter('setname ', `لتم تغير الأسم`)
+      .setFooter('prefix ', `+`)
+      .setFooter('playing ', `تم تغيير الحالة`)       .setFooter('streem ', `لتم تغيير الحالة الى ستريمنج`)
+      .setFooter('setavatar ', `لتم تغير صورة البوت`)
+      .setFooter('setname ', `لتم تغير الأسم`)
       .setFooter('======================================================')
       .setFooter('اوامر الادمنيه')
-          .setFooter('prefix ', `-`)
+      .setFooter('prefix ', `-`)
 	  .addField('-bc', `لخاصية البرودكستات`)
       .setFooter('======================================================')
       .setFooter('اوامر الاعضاء')
-          .setFooter('prefix ', `-`)
+      .setFooter('prefix ', `-`)
       .addField('-invite', `لاضافة البوت الى سيرفرك`)
 	  .addField('-roles', `لمعرفة الرتب الي في السيرفر`)
       .addField('-avatar', `يجبلك الافتار حقك يعني صورة حسابك`)
@@ -238,7 +235,7 @@ client.on("message", message => {
       .addField('-support', `سيرفر الدعم`)
       .setFooter('======================================================')
       .setFooter('اوامر تحت الصيانه(يمكنك تجربتها) وشكرا')
-          .setFooter('prefix ', `-`)
+      .setFooter('prefix ', `-`)
       .addField('-play', `لتسمع الاغنيه`)
 	  .addField('-mute ', `تعطي لشخص ميوت  لايتكلم`)
       .addField('-غرد', `للتغريد`)
@@ -286,7 +283,7 @@ client.on("message", message => {
   const embed = new Discord.RichEmbed()
       .setColor("RANDOM")
       .setFooter('© Premium Bot:heart: جميع الحقوق محفوظة 2017 لــبوت')
-      .addField(' شكرا لاستخدمك مطرقة بوت ', `هنا رابط بوتك`)
+      .addField('شكرا لاستخدام بوتي', 'https://discordapp.com/api/oauth2/authorize?client_id=462026589669031937&permissions=2146958583&scope=bot')
   message.author.send({embed});
 
  }
@@ -308,7 +305,7 @@ message.channel.sendEmbed(cat);
 
 
 client.on('ready', () => {
-     client.user.setActivity("انا اشاهدك حبيبي by مطرقة",{type: 'WATCHING'});
+     client.user.setActivity("انا اشاهدك حبيبي by اللحية",{type: 'WATCHING'});
 
 });
 
@@ -579,7 +576,7 @@ const Za7f = [
   var embed = new Discord.RichEmbed()
   .setColor('RANDOM')
    .setThumbnail(message.author.avatarURL) 
- .addField('مطرقة بوت' ,
+ .addField('اللحية' ,
   `${Za7f[Math.floor(Math.random() * Za7f.length)]}`)
   message.channel.sendEmbed(embed);
   console.log('[38ab] Send By: ' + message.author.username)
@@ -853,14 +850,14 @@ const Client = new Discord.Client();
 
 client.on('ready', () => {
    console.log(`----------------`);
-      console.log(`NADIR BOT STARTED`);
+      console.log(`MAHDI BOT STARTED`);
         console.log(`---------------`);
       console.log(`ON ${client.guilds.size} Servers `);
     console.log(`---------------`);
   console.log(`Logged in as ${client.user.tag}!`);
-  client.user.setGame(`in 60 server -help And 130 user`,"http://twitch.tv/ninja")
+  client.user.setGame(`Mido King -help اللحية`,"http://twitch.tv/ninja")
    client.user.setStatus("dnd")
-});
+})
 
 
 
@@ -1083,7 +1080,7 @@ client.on('guildMemberAdd', member => {
     .setDescription(`اهلا بك في السيرفر`)
     .addField(' :bust_in_silhouette:  انت رقم',`**[ ${member.guild.memberCount} ]**`,true)
     .setColor('GREEN')
-    .setFooter('The King Bot', 'https://cdn.discordapp.com/icons/390551815072251904/418fa2788d8115808951c9881ba8f190.jpg')
+    .setFooter('MAR Bot', 'https://cdn.pg.sa/OD53Wjr9p0.gif')
 
 var channel =member.guild.channels.find('name', 'wlc')
 if (!channel) return;
@@ -1334,7 +1331,7 @@ client.on('guildMemberRemove', member => {
     .setDescription(`الى اللقاء...`)
     .addField(':bust_in_silhouette:   تبقي',`**[ ${member.guild.memberCount} ]**`,true)
     .setColor('RED')
-    .setFooter(`The King Bot`, '')
+    .setFooter(`MAR Bot`, 'https://cdn.pg.sa/OD53Wjr9p0.gif')
 
 var channel =member.guild.channels.find('name', 'wlc')
 if (!channel) return;
