@@ -32,7 +32,7 @@ client.on('ready', () => {
 
 
 
-console.log('Mtera9a Bot Ready');
+console.log('Mido King Bot Ready');
 client.on('ready', () => {
   console.log(`im redey`);
 });
@@ -173,36 +173,47 @@ client.on("message", message => {
   const embed = new Discord.RichEmbed()
       .setColor("RANDOM")
       .setFooter('© Premium Bot:heart: جميع الحقوق محفوظة 2017 لــبوت')
-      .setFooter('اوامر الادمنيه')
-	  .addField('-bc', `لخاصية البرودكستات`)
-      .setFooter('======================================================')
-      .setFooter('اوامر الاعضاء')
-      .addField('-invite', `لاضافة البوت الى سيرفرك`)
-	  .addField('-roles', `لمعرفة الرتب الي في السيرفر`)
-      .addField('-avatar', `يجبلك الافتار حقك يعني صورة حسابك`)
-      .addField('-2avatar', `الافتار عن طريق المنشن`)
-	  .addField('-server', `يجبلك معلومات السيرفر`)
-	  .addField('-id', `يجبلك الملف الشخصي حقك`)
-	  .addField('-clear', `البوت يمسح  100 رسايل`)
-	  .addField('-say', `البوت يكرر الكلام الي انت تقوله`)
-	  .addField('-ping', `يقلك كم بنق البوت`)
-      .addField('-support', `سيرفر الدعم`)
-      .setFooter('======================================================')
-      .setFooter('اوامر تحت الصيانه(يمكنك تجربتها) وشكرا')
-      .addField('-play', `لتسمع الاغنيه`)
-	  .addField('-mute ', `تعطي لشخص ميوت  لايتكلم`)
-      .addField('-غرد', `للتغريد`)
-      .addField('-embed', `البوت يكرر الكلام الي قلته ب امبد`)
-	  .addField('-cat', `يجبلك صورة بسه`)
-	  .addField('-member', `لترى كم عضو اون لاين وكم اوف لاين`)
-	  .addField('-اعضاء', `يوريك كم عضو في سيرفرك`)
-	  .addField('-cv', `يصنع لك روم صوتي`)
-	  .addField('-ct', `يصنع لك روم كتابي`)
-	  .addField('-kick', `لطرد شخص من سيرفر`)
-	  .addField('-ban', `لحظر شخص`)
-	  .addField('-سيرفرات ', `لرؤية   اعدادات سيرفر`)
-	  .addField('-كم ', `يوريك  كم في سيرفرات فيهم بوتك`)
-	  .addField('-bot ', `يوريك كم  داكرة بوتك`)
+  .setFooter('======================================================')
+    .setFooter('اوامر صاحب البوت')
+      .setFooter('prefix ', `+`)
+      .setFooter('playing ', `تم تغيير الحالة`)
+      .setFooter('streem ', `لتم تغيير الحالة الى ستريمنج`)
+      .setFooter('setavatar ', `لتم تغير صورة البوت`)
+      .setFooter('setname ', `لتم تغير الأسم`)
+  .setFooter('======================================================')
+    .setFooter('اوامر الادمنيه')
+      .setFooter('prefix ', `-`)
+      .addField('bc', `لخاصية البرودكستات`)
+  .setFooter('======================================================')
+    .setFooter('اوامر الاعضاء')
+      .setFooter('prefix ', `-`)
+      .addField('invite', `لاضافة البوت الى سيرفرك`)
+      .addField('roles', `لمعرفة الرتب الي في السيرفر`)
+      .addField('avatar', `يجبلك الافتار حقك يعني صورة حسابك`)
+      .addField('2avatar', `الافتار عن طريق المنشن`)
+      .addField('server', `يجبلك معلومات السيرفر`)
+      .addField('id', `يجبلك الملف الشخصي حقك`)
+      .addField('clear', `البوت يمسح  100 رسايل`)
+      .addField('say', `البوت يكرر الكلام الي انت تقوله`)
+      .addField('ping', `يقلك كم بنق البوت`)
+      .addField('support', `سيرفر الدعم`)
+  .setFooter('======================================================')
+    .setFooter('اوامر تحت الصيانه(يمكنك تجربتها) وشكرا')
+      .setFooter('prefix ', `-`)
+      .addField('play', `لتسمع الاغنيه`)
+      .addField('mute ', `تعطي لشخص ميوت  لايتكلم`)
+      .addField('غرد', `للتغريد`)
+      .addField('embed', `البوت يكرر الكلام الي قلته ب امبد`)
+      .addField('cat', `يجبلك صورة بسه`)
+      .addField('member', `لترى كم عضو اون لاين وكم اوف لاين`)
+      .addField('اعضاء', `يوريك كم عضو في سيرفرك`)
+      .addField('cv', `يصنع لك روم صوتي`)
+      .addField('ct', `يصنع لك روم كتابي`)
+      .addField('kick', `لطرد شخص من سيرفر`)
+      .addField('ban', `لحظر شخص`)
+      .addField('سيرفرات ', `لرؤية   اعدادات سيرفر`)
+      .addField('كم ', `يوريك  كم في سيرفرات فيهم بوتك`)
+      .addField('bot ', `يوريك كم  داكرة بوتك`)
   message.author.send({embed});
 
  }
@@ -235,7 +246,7 @@ client.on("message", message => {
   const embed = new Discord.RichEmbed()
       .setColor("RANDOM")
       .setFooter('© Premium Bot:heart: جميع الحقوق محفوظة 2017 لــبوت')
-      .addField(' شكرا لاستخدمك مطرقة بوت ', `هنا رابط بوتك`)
+      .addField(' شكرا لاستخدمك اللحية ', `هنا رابط بوتك`)
   message.author.send({embed});
 
  }
@@ -502,7 +513,7 @@ const Za7f = [
   var embed = new Discord.RichEmbed()
   .setColor('RANDOM')
    .setThumbnail(message.author.avatarURL) 
- .addField('مطرقة بوت' ,
+ .addField('اللحية' ,
   `${Za7f[Math.floor(Math.random() * Za7f.length)]}`)
   message.channel.sendEmbed(embed);
   console.log('[38ab] Send By: ' + message.author.username)
@@ -750,7 +761,7 @@ const Client = new Discord.Client();
 
 client.on('ready', () => {
    console.log(`----------------`);
-      console.log(`NADIR BOT STARTED`);
+      console.log(`MAHDI BOT STARTED`);
         console.log(`---------------`);
       console.log(`ON ${client.guilds.size} Servers `);
     console.log(`---------------`);
@@ -962,8 +973,44 @@ return message.reply("**:white_check_mark: .. تم فك الميوت عن الش
 });
 
 
+client.on('message', message => {
+    var prefix = "+";
+
+      if (!message.content.startsWith(prefix)) return;
+      var args = message.content.split(' ').slice(1);
+      var argresult = args.join(' ');
+      if (message.author.id == 462026589669031937) return;
 
 
+    if (message.content.startsWith(prefix + 'playing')) {
+    if (message.author.id !== '378293431593598986') return message.reply('** هذا الأمر فقط لصاحب البوت و شكراًً **')
+    client.user.setGame(argresult);
+        message.channel.sendMessage(`**${argresult}** : تم تغيير الحالة`)
+    } else
+
+
+    if (message.content.startsWith(prefix + 'streem')) {
+    if (message.author.id !== '378293431593598986') return message.reply('** هذا الأمر فقط لصاحب البوت و شكراًً **')
+    client.user.setGame(argresult, "http://twitch.tv/HP");
+        message.channel.sendMessage(`**${argresult}** :تم تغيير الحالة الى ستريمنج`)
+    } else
+
+    if (message.content.startsWith(prefix + 'setname')) {
+    if (message.author.id !== '378293431593598986') return message.reply('** هذا الأمر فقط لصاحب البوت و شكراًً **')
+      client.user.setUsername(argresult).then
+          message.channel.sendMessage(`**${argresult}** : تم تغير الأسم`)
+      return message.reply("**لا تستطيع تغير الأسم الا بعد ساعتين**");
+    } else
+
+    if (message.content.startsWith(prefix + 'setavatar')) {
+    if (message.author.id !== '378293431593598986') return message.reply('** هذا الأمر فقط لصاحب البوت و شكراًً **')
+    client.user.setAvatar(argresult);
+        message.channel.sendMessage(`**${argresult}** : تم تغير صورة البوت`);
+    }
+
+
+
+     });
 
 
 
@@ -980,7 +1027,7 @@ client.on('guildMemberAdd', member => {
     .setDescription(`اهلا بك في السيرفر`)
     .addField(' :bust_in_silhouette:  انت رقم',`**[ ${member.guild.memberCount} ]**`,true)
     .setColor('GREEN')
-    .setFooter('The King Bot', 'https://cdn.discordapp.com/icons/390551815072251904/418fa2788d8115808951c9881ba8f190.jpg')
+    .setFooter('The King Bot', 'https://cdn.pg.sa/OD53Wjr9p0.gif')
 
 var channel =member.guild.channels.find('name', 'wlc')
 if (!channel) return;
@@ -1813,39 +1860,18 @@ client.on('guildMemberAdd', member => {
       channel.sendEmbed(embed);
     });
     
-    client.on('guildMemberRemove', member => {
-        var embed = new Discord.RichEmbed()
-        .setAuthor(member.user.username, member.user.avatarURL)
-        .setThumbnail(member.user.avatarURL)
-        .setTitle(`الله معاك :raised_hand::skin-tone-1: :pensive:`)
-        .setDescription(`مع السلامه تشرفنا بك :raised_hand::skin-tone-1: :pensive: `)
-        .addField(':bust_in_silhouette:   تبقي',`**[ ${member.guild.memberCount} ]**`,true)
-        .setColor('RED')
-        .setFooter(`==== نــتــمــنــآ لــكــم آســتــمـــتــآع ====`, 'https://cdn.discordapp.com/attachments/397818254439219217/399292026782351381/shy.png')
-    
-    var channel =member.guild.channels.find('name', 'welcome')
-    if (!channel) return;
-    channel.send({embed : embed});
-    }) 
-
-
-
 
 
 
 
 client.on('message', message => {
-    if (message.content.startsWith("-invites")) {
-    message.guild.fetchInvites()
-    .then(invites => message.channel.send(`انت جبت   ${invites.find(invite => invite.inviter.id === message.author.id).uses} عضو لهاذا السيرفر`))
+  if (true) {
+if (message.content === '-invite') {
+      message.author.send('https://discordapp.com/api/oauth2/authorize?client_id=458751694516256769&permissions=8&scope=bot').catch(e => console.log(e.stack));
 
-
-
-     
     }
-});
-
-
+   } 
+  });
 
 
 
