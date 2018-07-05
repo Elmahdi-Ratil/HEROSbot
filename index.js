@@ -179,15 +179,12 @@ client.on('message', msg => {
     msg.reply('هلا حبيبي امر انا تحت  خدمتك  :)');
   }
 });
-client.on('message', message => {
-     if (message.content === ("-help")) {
-     let embed = new Discord.RichEmbed()
-  .setAuthor(message.author.username)
-  .setColor("#8650a7")
-  .addField("Done" , " تــــم ارســالك في الخــاص")
-  message.channel.sendEmbed(embed);
-    }
+client.on('message', msg => {
+  if (msg.content === '-help') {
+    msg.reply('تم ارسال رسالة في خاص  :)');
+  }
 });
+
 client.on('message', msg => {
   if (msg.content === '-off bot') {
     msg.reply('سيتم  اضفاء بوت :)');
@@ -209,25 +206,14 @@ client.on('message', msg => {
   }
 });
 client.on("message", message => {
-    if (message.content === ("-help")) {
-     const embed = new Discord.RichEmbed() 
-         .setColor("#580e6b")
-         .setThumbnail(message.author.avatarURL)
-         .setDescription(`
-      .setColor("RANDOM")
+ if (message.content === "-help") {
+  const embed = new Discord.RichEmbed()
+     .setColor("RANDOM")
       .setFooter('© Premium Bot:heart: جميع الحقوق محفوظة 2017 لــبوت')
-      .setFooter('اوامر صاحب البوت')
-      .setFooter('prefix ', `+`)
-      .setFooter('playing ', `تم تغيير الحالة`)       .setFooter('streem ', `لتم تغيير الحالة الى ستريمنج`)
-      .setFooter('setavatar ', `لتم تغير صورة البوت`)
-      .setFooter('setname ', `لتم تغير الأسم`)
-      .setFooter('======================================================')
       .setFooter('اوامر الادمنيه')
-      .setFooter('prefix ', `-`)
 	  .addField('-bc', `لخاصية البرودكستات`)
       .setFooter('======================================================')
       .setFooter('اوامر الاعضاء')
-      .setFooter('prefix ', `-`)
       .addField('-invite', `لاضافة البوت الى سيرفرك`)
 	  .addField('-roles', `لمعرفة الرتب الي في السيرفر`)
       .addField('-avatar', `يجبلك الافتار حقك يعني صورة حسابك`)
@@ -240,7 +226,6 @@ client.on("message", message => {
       .addField('-support', `سيرفر الدعم`)
       .setFooter('======================================================')
       .setFooter('اوامر تحت الصيانه(يمكنك تجربتها) وشكرا')
-      .setFooter('prefix ', `-`)
       .addField('-play', `لتسمع الاغنيه`)
 	  .addField('-mute ', `تعطي لشخص ميوت  لايتكلم`)
       .addField('-غرد', `للتغريد`)
@@ -255,8 +240,7 @@ client.on("message", message => {
 	  .addField('-سيرفرات ', `لرؤية   اعدادات سيرفر`)
 	  .addField('-كم ', `يوريك  كم في سيرفرات فيهم بوتك`)
 	  .addField('-bot ', `يوريك كم  داكرة بوتك`)
-   message.author.sendEmbed(embed)
-
+  message.author.send({embed});
  }
 });
 
